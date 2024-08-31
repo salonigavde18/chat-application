@@ -1,8 +1,9 @@
+import React from 'react'
 import { useEffect, useRef } from "react";
-import useGetMessages from "../../hooks/useGetMessages";
+import Message from './Message'
+import useGetMessages from '../../Hooks/useGetMessages'
 import MessageSkeleton from "../skeletons/MessageSkeleton";
-import Message from "./Message";
-import useListenMessages from "../../hooks/useListenMessages";
+import useListenMessages from "../../Hooks/useListenMessages";
 
 const Messages = () => {
 	const { messages, loading } = useGetMessages();
@@ -33,4 +34,3 @@ const Messages = () => {
 	);
 };
 export default Messages;
-

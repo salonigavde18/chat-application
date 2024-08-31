@@ -1,6 +1,7 @@
-import useGetConversations from "../../hooks/useGetConversations";
-import { getRandomEmoji } from "../../utils/emojis";
+import React from "react";
 import Conversation from "./Conversation";
+import useGetConversations from "../../Hooks/useGetConversations.js";
+import { getRandomEmoji } from "../../utils/emojis.js";
 
 const Conversations = () => {
 	const { loading, conversations } = useGetConversations();
@@ -19,4 +20,4 @@ const Conversations = () => {
 		</div>
 	);
 };
-export default Conversations;
+export default Conversations;
