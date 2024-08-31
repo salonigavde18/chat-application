@@ -1,4 +1,4 @@
-import bcrypt from "bcryptjs";
+import bcrypt from 'bcryptjs'
 import User from "../models/user.model.js";
 import generateTokenAndSetCookie from "../utils/generateTokenAndSetCookie.js";
 
@@ -49,7 +49,7 @@ export const signup = async (req, res) => {
 		}
 	} catch (error) {
 		console.log("Error in signup controller", error.message);
-		res.status(500).json({ error: "Internal Server Error" });
+		res.status(500).json({ error: "Mamdi" });
 	}
 };
 
@@ -73,7 +73,7 @@ export const login = async (req, res) => {
 		});
 	} catch (error) {
 		console.log("Error in login controller", error.message);
-		res.status(500).json({ error: "Internal Server Error" });
+		res.status(500).json({ error: "Internal Serverrrrrrrrrr Error" });
 	}
 };
 
